@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root">
+        <div id="product">
+            <div id="left">
+                <img id="shoe" src="shoe.png" alt="">
+            </div>
+            <div id="right" >
+                <div id="text">
+                <div id="text1" >Airmax</div>
+                <div id="text2">Winter Collections</div>
+                <div id="text3">Men sneakers wear</div>
+                </div>
+                <div id="number">
+                    <div id="num1">150</div>
+                    <div id="num2">200</div>
+                </div>
+                <div id="color">
+                    <div id="colorhead">Colors</div>
+                    <button style="background-color: yellow;height: 20px;width: 20px;border-radius: 10px;"></button>
+                    <button style="background-color: red;height: 20px;width: 20px;border-radius: 10px;" ></button>
+                    <button style="background-color: blue;height: 20px;width: 20px;border-radius: 10px;"></button>
+                </div>
+                <div id="size">
+                    <div id="size_text">Size</div>
+                    <span>6</span>
+                    <span>7</span>
+                    <span>8</span>
+                    <span>9</span>
+                    <span>10</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #root{
+            height: 600px;
+            width: 700px;
+            border: solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url(/bg.png);
+        }
+        #product{
+            height: 400px;
+            width: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #left{
+            height: 400px;
+            width:250px;
+            background-color: orangered;
+            border-radius: 0px 50% 50% 0px;
+        }
+        #right{
+            height: 400px;
+            width:250px;
+            background-color: black ;
+        }
+    
+        #shoe{
+            width: 380px;
+            position: relative;
+            top: 100px;
+            left: -90px;
+        }
+        #text1{
+            color: orangered;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 30px;
+            position: relative;
+            left: 30px;
+        }
+        #text2{
+            color: white;
+            font-size: 25px;
+            position: relative;
+            top: 100px;
+            left:10px ;
+        }
+        #text3{
+            color: white;
+            font-size: 28px;
+            position: relative;
+            top: 100px;
+            left:10px ;
+        }
+        #number{
+            position: relative;
+            top: 110px;
+            left: 20px;
+            display: flex;
+            gap: 50px;
+        }
+        #num1{
+            font-size: 25px;
+            color: white;
+        }
+        #num2{
+            font-size: 25px;
+            color: white;
+        }
+        #color{
+            position: relative;
+            top: 120px;
+            left: 40px;
+            display: flex;
+            gap: 20px;
+        }
+        #colorhead{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 20px;
+            position: relative;
+            left: -30px;
+            color: white;
+        }
+        #size{
+            font-family: monospace;
+            font-size: 20px;
+            position: relative;
+            top: 140px;
+            left: 40px;
+            display: flex;
+            gap: 20px;
+            color: white;
+        }
+        #size_text{
+            font-family: monospace;
+            font-size: 18px;
+            position: relative;
+            left: -30px;   
+        }
+    </style>
+</body>
+</html>
